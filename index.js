@@ -79,7 +79,7 @@ const home = fs.readFileSync("./index.html", "utf-8");
 
 console.log(__dirname);
 const server = http.createServer((req, res) => {
-    console.log("req.url");
+    console.log(req.url);
     if(req.url === "/"){
         return res.end(home);
     }
